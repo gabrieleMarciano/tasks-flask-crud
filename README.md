@@ -27,27 +27,27 @@ Este projeto é uma API em Python usando **Flask**, desenvolvida para fins de es
 
 ---
 
-# ⚙️ Como Rodar o Projeto Localmente
+## ⚙️ Como Rodar o Projeto Localmente
 
-## 📦 1. Clone o repositório
+### 📦 1. Clone o repositório
 
 ```bash
 git clone https://github.com/seuusuario/tasks-flask-crud
 cd tasks-flask-crud
 ```
 
-## 📦 2. Crie e ative o ambiente virtual
+### 📦 2. Crie e ative o ambiente virtual
 ```bash
 python -m venv venv
 source venv/bin/activate  # Linux/Mac
 venv\Scripts\activate     # Windows
 ```
 
-## 📜 3. Instale as dependências
+### 📜 3. Instale as dependências
 ```bash
 pip install flask pytest requests
 ```
-## 🚀 4. Inicialize a API
+### 🚀 4. Inicialize a API
 ```bash
 python app.py
 ```
@@ -59,7 +59,7 @@ http://127.0.0.1:5000
 
 A documentação pode ser aberta no Swagger Editor usando o arquivo:
 
-## 📄 openapi.yaml
+### 📄 openapi.yaml
 
 Ou acesse (caso esteja configurado no projeto):
 
@@ -69,8 +69,8 @@ http://127.0.0.1:5000/swagger
 ```
 ---
 
-### 🛠️ Endpoints da API
-## 📍 1. Criar tarefa
+## 🛠️ Endpoints da API
+### 📍 1. Criar tarefa
 
 POST /tasks
 ```bash
@@ -87,7 +87,7 @@ Resposta:
   "id": 1
 }
 ```
-## 📍 2. Listar todas as tarefas
+### 📍 2. Listar todas as tarefas
  
 GET /tasks
 ```bash
@@ -97,11 +97,11 @@ Resposta:
   "total_tasks": 3
 }
 ```
-## 📍 3. Buscar tarefa por ID
+### 📍 3. Buscar tarefa por ID
 
 GET /tasks/<id>
 
-## 📍 4. Atualizar tarefa
+### 📍 4. Atualizar tarefa
 
 PUT /tasks/<id>
 
@@ -113,7 +113,7 @@ Corpo da requisição:
   "completed": true
 }
 ```
-## 📍 5. Deletar tarefa
+### 📍 5. Deletar tarefa
 
 DELETE /tasks/<id>
 
@@ -123,18 +123,24 @@ Resposta:
   "message": "Tarefa removida com sucesso!"
 }
 ```
-### 🧪 Testes Automatizados (PyTest)
+
+---
+
+## 🧪 Testes Automatizados (PyTest)
 
 O arquivo tests.py valida:
-
+```plaintext
 ✔️ Criação de tarefas
 ✔️ Listagem
 ✔️ Busca por ID
 ✔️ Atualização
 ✔️ Remoção
-
-## ▶️ Executar testes:
+```
+### ▶️ Executar testes:
+```bash
 pytest -v
+```
+---
 
 ## 🧱 Estrutura do Projeto
 ```plaintext
@@ -146,15 +152,17 @@ pytest -v
 ├── requirements.txt      # Dependências
 └── README.md             # Documentação do projeto
 ```
-## 📜 Documentação OpenAPI
+---
+### 📜 Documentação OpenAPI
 
 Toda a documentação da API está no arquivo:
 
-## 📄 openapi.yaml
+#### 📄 openapi.yaml
 
-## Pode ser aberto no editor oficial:
-🔗 https://editor.swagger.io/
+#### Pode ser aberto no editor oficial:
+#### 🔗 https://editor.swagger.io/
 ---
+
 ## 👩‍💻 Autor
 
 Desenvolvido por Gabriele Marciano
