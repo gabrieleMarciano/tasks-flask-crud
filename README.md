@@ -67,6 +67,8 @@ Ou acesse (caso esteja configurado no projeto):
 ```bash
 http://127.0.0.1:5000/swagger
 ```
+---
+
 ### 🛠️ Endpoints da API
 ## 📍 1. Criar tarefa
 
@@ -135,6 +137,7 @@ O arquivo tests.py valida:
 pytest -v
 
 ## 🧱 Estrutura do Projeto
+```plaintext
 /
 ├── app.py                # API principal Flask
 ├── models/               # Modelos (ex.: Task)
@@ -142,7 +145,7 @@ pytest -v
 ├── tests.py              # Testes automatizados PyTest
 ├── requirements.txt      # Dependências
 └── README.md             # Documentação do projeto
-
+```
 ## 📜 Documentação OpenAPI
 
 Toda a documentação da API está no arquivo:
@@ -151,7 +154,7 @@ Toda a documentação da API está no arquivo:
 
 ## Pode ser aberto no editor oficial:
 🔗 https://editor.swagger.io/
-
+---
 ## 👩‍💻 Autor
 
 Desenvolvido por Gabriele Marciano
